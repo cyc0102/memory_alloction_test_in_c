@@ -10,8 +10,8 @@ int main() {
   // 指定空間大小
   int32_t arrLen = 250000000;  //about 1G byte
 
-  // 取得記憶體空間並初始化
-  dynArr = calloc( arrLen, sizeof(int) );
+  // 取得記憶體空間
+  dynArr = malloc( arrLen * sizeof(int) );
 
   if( dynArr == NULL ) {
     // 無法取得記憶體空間
